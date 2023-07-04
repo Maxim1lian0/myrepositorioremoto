@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(to bottom, #052cad98, #02ccff81);
+  margin: 0;
+  padding: 0;
+}
+
+.video-placeholder {
+  display: none;
+}   
+    
+h1{
+  font-family: 'arial',sans-serif;
+  color: rgb(39, 98, 112) ;
+  text-align: center;}
+
+p{
+    font-family: 'georgia', serif;/*tipo de letra*/
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+    border: 5px double black;
+    background-color: rgb(162, 230, 215);
+    width: auto;
+    height: auto;
+    text-align: center;}
+
+/* .box1{
+    background-color: rgba (48, 112, 51, 0.644);-color del fondo del cuadro
+    width: auto;-ancho del cuadro
+    height: 90px ;-alto del cuadro
+    padding: 0px ;
+    border: 5px solid rgb(0, 0, 0); -bordes del cuadro
+    margin: 50px ; -bordes exteriores al cuadro 
+}  */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px;}
+
+
+.imagen{
+  image-resolution: 320px;
+  
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+
+    /* background-color: rgba(180, 231, 178, 0.644);color del fondo del cuadro */
+    color:black}
+    
+@media (max-width: 600px) {
+    .column{
+        flex:100%;
+    }}
+
+  .container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;}
+
+  .brand {
+    display: flex;
+    align-items: center;} 
+
+  li>a {
+    padding: 8px 24px;}
+
+  li {
+    list-style-type: none;}
+  
+  a {
+    color: white;
+    text-decoration:none; 
+    
+  }
+  .nav-links {
+    display: flex;
+    align-items: center; }
+  
+  .button-menu-toggle {
+  display: none;}
+
+
+
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;}
+  
+  
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }}
+
+    .reproductor-audio {
+      width: 300px;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    audio {
+      width: 100%;
+    }
+    
